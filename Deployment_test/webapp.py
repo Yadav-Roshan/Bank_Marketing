@@ -61,8 +61,8 @@ poutcome_input = poutcome_col.selectbox("Outcome of Previous Campaign", ('', 'No
 emp_var_rate = st.slider("Employment Variation Rate", min_value = -5.0, max_value = 5.0, step = 0.1)
 cons_price_idx  = st.slider("Current Consumer Price Index", min_value = 80.00, max_value = 120.00, step = 0.01)
 
-X_train = pd.read_csv("datasets\model_x.csv")
-y_train = pd.read_csv("datasets\model_y.csv")
+X_train = pd.read_csv("https://raw.githubusercontent.com/Yadav-Roshan/Bank_Marketing/main/Deployment_test/datatsets/model_x.csv")
+y_train = pd.read_csv("https://raw.githubusercontent.com/Yadav-Roshan/Bank_Marketing/main/Deployment_test/datatsets/model_y.csv")
 X_train = X_train.set_index('ind')
 y_train = y_train.set_index('ind')
 
