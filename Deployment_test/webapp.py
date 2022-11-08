@@ -15,5 +15,5 @@ model=LogisticRegression()
 model.fit(X_train, y_train)
 
 if st.button("predict"):
-    prediciton =model.predict([[ 3.0,  9.0,  1.0,  5.0,0.0,  1.0,  0.0,  1.0, 6.0,  3.0,  2.95,  2.0, 6.01,  0.0,  1.0,  1.1, 9.3994, -3.64, 4.857,  5.19,0.0]])
+    prediciton =model.predict([[0,9,2,1,2,3.22,1,0,1,1.1,93.994]])
     st.write(prediciton)
