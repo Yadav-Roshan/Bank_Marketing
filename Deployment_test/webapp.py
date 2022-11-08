@@ -29,7 +29,7 @@ st.sidebar.selectbox("Navigation Bar", ("Home", "Prediction", "Contribute to Dat
 
 logo, titl = st.columns([1, 4])
 logo.image('https://raw.githubusercontent.com/Yadav-Roshan/Bank_Marketing/main/Deployment_test/images/bank_logo.png')
-original_title = '<p style="font-family:Arial Black; color:#624F82; font-size: 45px; text-align:center">Symbiosis Banking Services</p>'
+original_title = '<p style="font-family:Arial Black; color:#624F82; font-size: 45px; text-align:center">Piggy & Penny Banking Services</p>'
 titl.markdown(original_title, unsafe_allow_html=True)
 
 st.markdown("## **Prediction of Telemarketing Campaign**")
