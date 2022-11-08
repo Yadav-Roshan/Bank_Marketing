@@ -7,13 +7,7 @@ from sklearn.linear_model import LogisticRegression
 
 import base64
 
-def get_base64(bin_file):
-    with open(bin_file, 'rb') as f:
-        data = f.read()
-    return base64.b64encode(data).decode()
-
 def set_png_as_page_bg(png_file):
-    bin_str = get_base64(png_file) 
     page_bg_img = '''
     <style>
     .stApp {
@@ -23,17 +17,17 @@ def set_png_as_page_bg(png_file):
     background-attachment: scroll; # doesn't work
     }
     </style>
-    ''' % bin_str
+    '''
     st.markdown(page_bg_img, unsafe_allow_html=True)
     return
 
-set_png_as_page_bg(r'https://raw.githubusercontent.com/Yadav-Roshan/Bank_Marketing/main/Deployment_test/images/background.jpg')
+set_png_as_page_bg('https://raw.githubusercontent.com/Yadav-Roshan/Bank_Marketing/main/Deployment_test/images/background.jpg')
 
 st.sidebar.selectbox("Navigation Bar", ("Home", "Prediction", "Contribute to Datase", "About US"))
 
 
 logo, titl = st.columns([1, 4])
-logo.image(r'https://raw.githubusercontent.com/Yadav-Roshan/Bank_Marketing/main/Deployment_test/images/bank_logo.png')
+logo.image('https://raw.githubusercontent.com/Yadav-Roshan/Bank_Marketing/main/Deployment_test/images/bank_logo.png')
 original_title = '<p style="font-family:Arial Black; color:#624F82; font-size: 45px; text-align:center">Symbiosis Banking Services</p>'
 titl.markdown(original_title, unsafe_allow_html=True)
 
