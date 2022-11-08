@@ -10,6 +10,7 @@ X_train = pd.read_csv("https://raw.githubusercontent.com/Yadav-Roshan/Bank_Marke
 y_train = pd.read_csv("https://raw.githubusercontent.com/Yadav-Roshan/Bank_Marketing/main/Deployment_test/datatsets/model_y.csv")
 X_train = X_train.set_index('ind')
 y_train = y_train.set_index('ind')
+
 model=LogisticRegression()
 model.fit(X_train, y_train)
 
