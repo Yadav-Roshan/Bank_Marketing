@@ -5,9 +5,9 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import pickle
 
+model = pickle.load(open('model.sav', 'rb'))
+
 def predict(arr):
-    with open('model.sav', 'rb') as f:
-        model = pickle.load(f)
     
     classes = {0: 'will not subscribe', 1:'will subscribe'}
     
