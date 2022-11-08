@@ -4,7 +4,7 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LogisticRegression
-import plotly.figure_factory as ff
+
 import base64
 
 def get_base64(bin_file):
