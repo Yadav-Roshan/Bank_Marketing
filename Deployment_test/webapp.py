@@ -6,8 +6,8 @@ import matplotlib.pyplot as plt
 import pickle
 from sklearn.linear_model import LogisticRegression
 
-X_train = pd.read_csv("datasets\model_x.csv")
-y_train = pd.read_csv("datasets\model_y.csv")
+X_train = pd.read_csv("https://raw.githubusercontent.com/Yadav-Roshan/Bank_Marketing/main/Deployment_test/datatsets/model_x.csv")
+y_train = pd.read_csv("https://raw.githubusercontent.com/Yadav-Roshan/Bank_Marketing/main/Deployment_test/datatsets/model_y.csv")
 
 model=LogisticRegression()
 model.fit(X_train, y_train)
