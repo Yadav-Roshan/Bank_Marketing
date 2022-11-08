@@ -16,4 +16,4 @@ model.fit(X_train, y_train)
 
 if st.button("predict"):
     prediciton =model.predict([[0,9,2,1,2,3.22,1,0,1,1.1,93.994]])
-    st.write(prediciton)
+    st.write(prediciton[0)
