@@ -24,7 +24,18 @@ def set_png_as_page_bg(png_file):
 
 set_png_as_page_bg('https://raw.githubusercontent.com/Yadav-Roshan/Bank_Marketing/main/Deployment_test/images/background.jpg')
 
-st.sidebar.selectbox("Navigation Bar", ("Home", "Prediction", "Contribute to Datase", "About US"))
+# st.sidebar.selectbox("Navigation Bar", ("Home", "Prediction", "Contribute to Datase", "About US"))
+with st.sidebar
+selected = option_menu(None, ["Home", "Upload",  "Tasks", 'Settings'], 
+    icons=['house', 'cloud-upload', "list-task", 'gear'], 
+    menu_icon="cast", default_index=0, orientation="horizontal",
+    styles={
+        "container": {"padding": "0!important", "background-color": "#fafafa"},
+        "icon": {"color": "orange", "font-size": "25px"}, 
+        "nav-link": {"font-size": "25px", "text-align": "left", "margin":"0px", "--hover-color": "#eee"},
+        "nav-link-selected": {"background-color": "green"},
+    }
+)
 
 
 logo, titl = st.columns([1, 4])
