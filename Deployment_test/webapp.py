@@ -144,4 +144,3 @@ if st.button("Predict"):
         flag = False
     if(flag):
         predict_class()
-        
