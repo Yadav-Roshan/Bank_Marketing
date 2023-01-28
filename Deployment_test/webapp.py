@@ -6,40 +6,38 @@ import matplotlib.pyplot as plt
 from sklearn.linear_model import LogisticRegression
 from streamlit_option_menu import option_menu
 
-import base64
+# import base64
 
-def set_png_as_page_bg(png_file):
-    page_bg_img = '''
-    <style>
-    .stApp {
-    background-image: url("data:image/png;base64,%s");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: scroll; # doesn't work
-    }
-    </style>
-    '''
-    st.markdown(page_bg_img, unsafe_allow_html=True)
-    return
+# def set_png_as_page_bg(png_file):
+#     page_bg_img = '''
+#     <style>
+#     .stApp {
+#     background-image: url("data:image/png;base64,%s");
+#     background-size: cover;
+#     background-repeat: no-repeat;
+#     background-attachment: scroll; # doesn't work
+#     }
+#     </style>
+#     '''
+#     st.markdown(page_bg_img, unsafe_allow_html=True)
+#     return
 
 
-set_png_as_page_bg('https://raw.githubusercontent.com/Yadav-Roshan/Bank_Marketing/main/Deployment_test/images/background.jpg')
+# set_png_as_page_bg('https://raw.githubusercontent.com/Yadav-Roshan/Bank_Marketing/main/Deployment_test/images/background.jpg')
 
 # st.sidebar.selectbox("Navigation Bar", ("Home", "Prediction", "Contribute to Datase", "About US"))
+
 with st.sidebar:
-    selected = option_menu(
-        menu_title = None, 
-        options = ["Home", "Upload",  "Tasks", 'Settings'], 
-        icons=['house', 'cloud-upload', "list-task", 'gear'], 
-        default_index=0, 
-        orientation="horizontal"
-#         styles={
-#             "container": {"padding": "0!important", "background-color": "#fafafa"},
-#             "icon": {"color": "orange", "font-size": "25px"}, 
-#             "nav-link": {"font-size": "25px", "text-align": "left", "margin":"0px", "--hover-color": "#eee"},
-#             "nav-link-selected": {"background-color": "green"},
-#         }
-    )
+   selected = option_menu(None, ["Home", "Upload",  "Tasks", 'Settings'], 
+    icons=['house', 'cloud-upload', "list-task", 'gear'], 
+    menu_icon="cast", default_index=0, orientation="horizontal",
+    styles={
+        "container": {"padding": "0!important", "background-color": "#fafafa"},
+        "icon": {"color": "orange", "font-size": "22px"}, 
+        "nav-link": {"font-size": "22px", "text-align": "left", "margin":"0px", "--hover-color": "#eee"},
+        "nav-link-selected": {"background-color": "green"},
+    }
+)
 
 
 logo, titl = st.columns([1, 4])
