@@ -132,11 +132,11 @@ if st.button("Predict"):
         flag = False
     
     if(contact_input == ""):
-        contact_col.error("Please select any valid contact");
+        contact_col1.error("Please select any valid contact");
         flag = False
     
     if(day_of_week_input == ""):
-        day_of_week_col.error("Please select any valid education");
+        day_col.error("Please select any valid education");
         flag = False
     
     if(poutcome_input == ""):
