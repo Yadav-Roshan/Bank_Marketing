@@ -124,10 +124,10 @@ def predict_class():
 st.markdown("###### To predict whether this customer will be subscribing our scheme or not, click on predict.")
 if st.button("Predict"):
     flag = True
-    if(job_input == "Select Job"):
+    if(job_input == ""):
         job_col.error("Please select any valid job")
         flag = False
-    if(education_input == "Select Education"):
+    if(education_input == ""):
         education_col.error("Please select any valid education");
         flag = False
     if(flag):
