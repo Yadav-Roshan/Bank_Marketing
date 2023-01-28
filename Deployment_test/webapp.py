@@ -132,15 +132,15 @@ if st.button("Predict"):
         flag = False
     
     if(contact_input == ""):
-        contact_col1.error("Please select any valid contact");
+        contact_col1.error("Please select any valid contact type");
         flag = False
     
     if(day_of_week_input == ""):
-        day_col.error("Please select any valid education");
+        day_col.error("Please select any valid day");
         flag = False
     
     if(poutcome_input == ""):
-        poutcome_col.error("Please select any valid education");
+        poutcome_col.error("Please select any valid outcome");
         flag = False
     if(flag):
         predict_class()
