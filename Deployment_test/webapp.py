@@ -27,9 +27,12 @@ set_png_as_page_bg('https://raw.githubusercontent.com/Yadav-Roshan/Bank_Marketin
 
 # st.sidebar.selectbox("Navigation Bar", ("Home", "Prediction", "Contribute to Datase", "About US"))
 with st.sidebar:
-    selected = option_menu(menu_title = None, options = ["Home", "Upload",  "Tasks", 'Settings'], 
+    selected = option_menu(
+        menu_title = None, 
+        options = ["Home", "Upload",  "Tasks", 'Settings'], 
         icons=['house', 'cloud-upload', "list-task", 'gear'], 
-        menu_icon="cast", default_index=0, orientation="horizontal",
+        default_index=0, 
+        orientation="horizontal"
 #         styles={
 #             "container": {"padding": "0!important", "background-color": "#fafafa"},
 #             "icon": {"color": "orange", "font-size": "25px"}, 
