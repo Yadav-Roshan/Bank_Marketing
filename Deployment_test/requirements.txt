@@ -5,4 +5,3 @@ scikit-learn==1.0.2
 matplotlib==3.5.1
 streamlit-option-menu
 plotly
-base64
