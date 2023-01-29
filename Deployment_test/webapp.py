@@ -7,7 +7,6 @@ from sklearn.linear_model import LogisticRegression
 from streamlit_option_menu import option_menu
 import plotly.figure_factory as ff
 import plotly.express as px
-import base64
 
 st.set_page_config(
     page_title="Bank Telemarketing Project",
