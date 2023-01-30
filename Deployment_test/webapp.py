@@ -94,7 +94,7 @@ if(selected == "Home"):
         motivation_col.image(r"https://previews.123rf.com/images/outchill/outchill2106/outchill210601273/169905108-motivation-text-written-on-red-round-vintage-rubber-stamp-.jpg", width = 200)      
 
         motivation = '''
-        <p style = "font-family: Sans-serif;color:white; text-decoration:solid; box-shadow:5px;background-color:#c9184a; border:2px #b7b7a4; padding: 90px; font-size:20px; border-radius:2px; text-align:justify">
+        <p style = "style = "-webkit-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);-moz-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);box-shadow:20px 28px 16px -26px rgba(0, 0, 0);font-family: Sans-serif;color:white; text-decoration:solid; box-shadow:5px;background-color:#c9184a; border:2px #b7b7a4; padding: 90px; font-size:20px; border-radius:2px; text-align:justify">
             A retail bank has a customer call centre as one of its units, through which the bank communicates
             with potential new clients and offers term deposits. Term deposits are defined as a fixed-term
             investment that includes the deposit of money into an account at a financial institution.
@@ -117,7 +117,7 @@ if(selected == "Home"):
         challenge_col.image(r"https://previews.123rf.com/images/ionutparvu/ionutparvu1612/ionutparvu161202091/67603294-challenge-stamp-sign-text-word-logo-red-.jpg", width = 200)
 
         challenge = '''
-        <p style = "font-family: Sans-serif;color:white; text-decoration:solid; box-shadow:5px;background-color:#9d0208; border:2px #b7b7a4; padding: 80px; font-size:20px; border-radius:2px; text-align:justify">
+        <p style = "-webkit-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);-moz-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);box-shadow:20px 28px 16px -26px rgba(0, 0, 0);font-family: Sans-serif;color:white; text-decoration:solid; box-shadow:5px;background-color:#9d0208; border:2px #b7b7a4; padding: 80px; font-size:20px; border-radius:2px; text-align:justify">
                 Can we develop a data-driven approach to help the bank increase its success rate of telemarketing
                 while incorporating the economic context? Several other questions can be raised at this point:
                 <br>
@@ -135,7 +135,7 @@ if(selected == "Home"):
         desc_col.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/resolve.jpg?raw=true", width = 200)
 
         description = '''
-        <p style = "font-family: Sans-serif;color:white; text-decoration:solid; box-shadow:5px;background-color:#f72585; border:2px #b7b7a4; padding: 80px; font-size:20px; border-radius:2px; text-align:justify">
+        <p style = "-webkit-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);-moz-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);box-shadow:20px 28px 16px -26px rgba(0, 0, 0);font-family: Sans-serif;color:white; text-decoration:solid; box-shadow:5px;background-color:#f72585; border:2px #b7b7a4; padding: 80px; font-size:20px; border-radius:2px; text-align:justify">
                 The bank marketing data set was collected by Moro, Cortez, and Rita (2014) and ordered by date
                 ranging from May 2008 to November 2010. The data was ordered by date even though its year
                 has to be inferred manually. The input features were categorized and described as follows:
