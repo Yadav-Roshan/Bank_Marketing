@@ -49,7 +49,7 @@ styling = '''<style> div.css-ocqkz7.e1tzin5v4{
         font-size: 20px;
         width: 230px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+        -webkit-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);-moz-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);box-shadow:20px 28px 16px -26px rgba(0, 0, 0);
     }
     button.css-1x8cf1d.edgvbvh10:hover{
         background-color: #bc3908;
