@@ -14,8 +14,7 @@ st.set_page_config(
     layout="wide"
 )
    
-styling = 
-'''<style> div.css-ocqkz7.e1tzin5v4{
+styling = '''<style> div.css-ocqkz7.e1tzin5v4{
         /* background-color: #f5ebe0; */
         border-bottom: 100px;
         border-color: aqua;
