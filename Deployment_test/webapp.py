@@ -13,17 +13,8 @@ st.set_page_config(
     page_icon="bank2",
     layout="wide"
 )
-
-STREAMLIT_STATIC_PATH = Path(st.__path__[0]) / 'static'
-CSS_PATH = (STREAMLIT_STATIC_PATH)
-if not CSS_PATH.is_dir():
-    CSS_PATH.mkdir()
-
-css_file = CSS_PATH / "style.css"
-if not css_file.exists():
-    shutil.copy("style.css", css_file)
-    
-styling = '''<link rel="stylesheet" href="style.css" type="text/css"/>'''
+   
+styling = '''<link rel="stylesheet" href="https://raw.githubusercontent.com/Yadav-Roshan/Bank_Marketing/main/Deployment_test/style.css" type="text/css"/>'''
 st.markdown(styling, unsafe_allow_html = True)
 
 with open(r"https://raw.githubusercontent.com/Yadav-Roshan/Bank_Marketing/main/Deployment_test/style.css") as f:
