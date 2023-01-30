@@ -85,7 +85,7 @@ selected = option_menu(None, ["Home", "Prediction",  "Analysis", "Contribute", '
 
 if(selected == "Home"):
     with st.container():
-        st.markdown('''<img src = "https://raw.githubusercontent.com/Yadav-Roshan/Bank_Marketing/main/Deployment_test/images/homepage.webp" width=1275 style = "-webkit-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);-moz-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);box-shadow: 0 28px 16px -26px rgba(0, 0, 0); border: 2px #00bbf9">''', unsafe_allow_html = True)
+        st.markdown('''<img src = "https://raw.githubusercontent.com/Yadav-Roshan/Bank_Marketing/main/Deployment_test/images/homepage.webp" width=1275 style = "-webkit-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);-moz-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);box-shadow:20px 28px 16px -26px rgba(0, 0, 0); border:2px #00bbf9">''', unsafe_allow_html = True)
 #         f_img = st.image(r"https://raw.githubusercontent.com/Yadav-Roshan/Bank_Marketing/main/Deployment_test/images/homepage.webp", width = 1200)
     
     with st.container():
