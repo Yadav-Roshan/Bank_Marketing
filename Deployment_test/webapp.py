@@ -15,7 +15,7 @@ st.set_page_config(
 )
    
 styling = 
-'''div.css-ocqkz7.e1tzin5v4{
+'''<style> div.css-ocqkz7.e1tzin5v4{
         /* background-color: #f5ebe0; */
         border-bottom: 100px;
         border-color: aqua;
@@ -57,7 +57,7 @@ styling =
         color: white;
         /* width: 200px; */
         height: 150%;
-    }'''
+    } </style>'''
 
 st.markdown(styling, unsafe_allow_html = True)
 
