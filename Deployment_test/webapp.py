@@ -17,8 +17,8 @@ st.set_page_config(
 styling = '''<link rel="stylesheet" href="https://raw.githubusercontent.com/Yadav-Roshan/Bank_Marketing/main/Deployment_test/style.css" type="text/css"/>'''
 st.markdown(styling, unsafe_allow_html = True)
 
-with open(r"https://raw.githubusercontent.com/Yadav-Roshan/Bank_Marketing/main/Deployment_test/style.css") as f:
-    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html = True)
+# with open(r"https://raw.githubusercontent.com/Yadav-Roshan/Bank_Marketing/main/Deployment_test/style.css") as f:
+#     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html = True)
 
 
 
