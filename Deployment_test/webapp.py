@@ -36,7 +36,7 @@ selected = option_menu(None, ["Home", "Prediction",  "Analysis", "Contribute", '
         "container": {"padding": "0!important", "background-color": "#9d0208"},
         "icon": {"color": "orange", "font-size": "18px"}, 
         "nav-link": {"color":"white", "font-size": "18px", "text-align": "left", "margin":"0px", "--hover-color": "#780000", "border" : "2px #fb6f92"},
-        "nav-link-selected": {"background-color": "#6a00f4"},
+        "nav-link-selected": {"background-color": "#370617"},
     }
 )
 
