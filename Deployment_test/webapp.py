@@ -94,7 +94,7 @@ if(selected == "Home"):
         motivation_col.image(r"https://previews.123rf.com/images/outchill/outchill2106/outchill210601273/169905108-motivation-text-written-on-red-round-vintage-rubber-stamp-.jpg", width = 200)      
 
         motivation = '''
-        <p style = "style = "-webkit-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);-moz-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);box-shadow:20px 28px 16px -26px rgba(0, 0, 0);font-family: Sans-serif;color:white; text-decoration:solid; box-shadow:5px;background-color:#c9184a; border:2px #b7b7a4; padding: 90px; font-size:20px; border-radius:2px; text-align:justify">
+        <p style = "-webkit-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);-moz-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);box-shadow:20px 28px 16px -26px rgba(0, 0, 0);font-family: Sans-serif;color:white; text-decoration:solid; box-shadow:5px;background-color:#c9184a; border:2px #b7b7a4; padding: 90px; font-size:20px; border-radius:2px; text-align:justify">
             A retail bank has a customer call centre as one of its units, through which the bank communicates
             with potential new clients and offers term deposits. Term deposits are defined as a fixed-term
             investment that includes the deposit of money into an account at a financial institution.
