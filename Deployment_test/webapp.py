@@ -498,14 +498,14 @@ if(selected == "About Us"):
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"/>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"/>
         <p style = "-webkit-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);-moz-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);box-shadow:20px 28px 16px -26px rgba(0, 0, 0);font-family: Sans-serif;color:white; text-decoration:solid; box-shadow:5px;background-color:#da2c38; border:2px #b7b7a4; padding: 80px; font-size:20px; border-radius:2px; text-align:center">
-            <span><img src = "https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/roshan.png?raw=true" width = 250 height= 250></span><br>
+            <span><img src = "https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/dhvani.png?raw=true" width = 250 height= 250></span><br>
             <span style = "font-size: 25px"><b>Dhvani Parekh</b></span><br>
             <span>2nd Year AIML, SIT, Pune</span><br>
             <span><b>Developer</b></span><br>
             <span style = "font-size: 40px">
-                <a href = "https://www.linkedin.com/in/roshan-yadav-942536143"><i class="bi bi-linkedin"></i></a> | 
-                <a href = "https://github.com/Yadav-Roshan"><i class="bi bi-github"></i></a> |
-                <a href = "https://www.instagram.com/yadavroshan276/"><i class="bi bi-instagram"></i></a>
+                <a href = "https://www.linkedin.com/in/dhvaniparekh2204/"><i class="bi bi-linkedin"></i></a> | 
+                <a href = "https://github.com/dhvani2204"><i class="bi bi-github"></i></a> |
+                <a href = "https://www.instagram.com/dhvani224/"><i class="bi bi-instagram"></i></a>
             </span>
         </p>    
     '''
@@ -515,14 +515,14 @@ if(selected == "About Us"):
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"/>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"/>
         <p style = "-webkit-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);-moz-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);box-shadow:20px 28px 16px -26px rgba(0, 0, 0);font-family: Sans-serif;color:white; text-decoration:solid; box-shadow:5px;background-color:#da2c38; border:2px #b7b7a4; padding: 80px; font-size:20px; border-radius:2px; text-align:center">
-            <span><img src = "https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/roshan.png?raw=true" width = 250 height= 250></span><br>
+            <span><img src = "https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/lob.png?raw=true" width = 250 height= 250></span><br>
             <span style = "font-size: 25px"><b>Joshua Lobo</b></span><br>
             <span>2nd Year AIML, SIT, Pune</span><br>
             <span><b>Developer</b></span><br>
             <span style = "font-size: 40px">
-                <a href = "https://www.linkedin.com/in/roshan-yadav-942536143"><i class="bi bi-linkedin"></i></a> | 
-                <a href = "https://github.com/Yadav-Roshan"><i class="bi bi-github"></i></a> |
-                <a href = "https://www.instagram.com/yadavroshan276/"><i class="bi bi-instagram"></i></a>
+                <a href = "https://www.linkedin.com/in/joshua-lobo-4a7642230"><i class="bi bi-linkedin"></i></a> | 
+                <a href = https://github.com/Yadav-Roshan/Bank_Marketing/"><i class="bi bi-github"></i></a> |
+                <a href = "https://instagram.com/forever_faster133?igshid=NTA5ZTk1NTc="><i class="bi bi-instagram"></i></a>
             </span>
         </p>    
     '''
