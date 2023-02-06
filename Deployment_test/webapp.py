@@ -410,7 +410,7 @@ if(selected == 'Analysis'):
 
         if(second_menu == "Day of Week"):
             # second.markdown('''<span style = "font-family: Sans-serif; font-size: 20px; background-color: #2b9348; color:#ffff3f; text-decoration:solid; padding: 8px; border-radius: 5px">Inference</span><br>''', unsafe_allow_html=True)
-             _, dweek, _ = st.columns([2, 8, 2])
+            _, dweek, _ = st.columns([2, 8, 2])
             dweek.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/day_t.png?raw=true")
             infer = st.button("Click for Inference")
             if infer:
@@ -424,7 +424,7 @@ if(selected == 'Analysis'):
 
         if(second_menu == "Duration"):
             # second.markdown('''<span style = "font-family: Sans-serif; font-size: 20px; background-color: #2b9348; color:#ffff3f; text-decoration:solid; padding: 8px; border-radius: 5px">Inference</span><br>''', unsafe_allow_html=True)
-             _, duration2, _ = st.columns([2, 8, 2])
+            _, duration2, _ = st.columns([2, 8, 2])
             duration2.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/duration_t.png?raw=true")
             infer = st.button("Click for Inference")
             if infer:
@@ -450,7 +450,7 @@ if(selected == 'Analysis'):
 
         if(second_menu == "Previous Outcome"):
             # second.markdown('''<span style = "font-family: Sans-serif; font-size: 20px; background-color: #2b9348; color:#ffff3f; text-decoration:solid; padding: 8px; border-radius: 5px">Inference</span><br>''', unsafe_allow_html=True)
-             _, pcoutcome2, _ = st.columns([2, 8, 2])
+            _, pcoutcome2, _ = st.columns([2, 8, 2])
             poutcome2.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/poutcome_t.png?raw=true")
             infer = st.button("Click for Inference")
             if infer:
