@@ -14,8 +14,6 @@ st.set_page_config(
     page_icon="bank2",
     layout="wide"
 )
-components.iframe("https://trade.mql5.com/trade?servers=SomeBroker1-Demo,SomeBroker1-Live,SomeBroker2-Demo,SomeBroker2-Live&amp;trade_server=SomeBroker-Demo&amp;startup_mode=open_demo&amp;lang=en&amp;save_password=off")
-
 styling = '''<style> div.css-ocqkz7.e1tzin5v4{
         /* background-color: #f5ebe0; */
         border-bottom: 100px;
@@ -72,7 +70,7 @@ with st.container():
     # logo.image('https://raw.githubusercontent.com/Yadav-Roshan/Bank_Marketing/main/Deployment_test/images/bank_logo.png', width=140)
     # original_title = '<p style="font-family:Arial Black; color:#e76f51; font-size: 60px; text-align:left, text-decoration: solid">Piggy & Penny Banking Services</p>'
     # titl.markdown(original_title, unsafe_allow_html=True)
-    st.markdown('''<img  align="middle" src = "https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/header_new.png?raw=true" width = 1275 height = 320>''', unsafe_allow_html=True)
+    st.markdown('''<center><img  align="middle" src = "https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/header_new.png?raw=true" width = 1275 height = 320></center>''', unsafe_allow_html=True)
 
 selected = option_menu(None, ["Home", "Prediction",  "Analysis", "Contribute", 'About Us'], 
     icons=['house', 'gear-wide-connected',"bar-chart-line" ,"cloud-arrow-up", 'person-rolodex'], 
