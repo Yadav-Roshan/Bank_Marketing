@@ -23,6 +23,13 @@ styling = '''<style> div.css-ocqkz7.e1tzin5v4{
         /* box-shadow: 100px; */
         /* box-shadow: blueviolet; */
     }
+    
+    div.css-1fv8s86.e16nr0p34 {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
 
     a.nav-link.nav-link-horizontal{
         background-color: none;
