@@ -461,7 +461,7 @@ if(selected == 'Analysis'):
     if(first_menu == "Correlation"):
         st.markdown('''<p style = "text-align : center; font-family: Sans-serif; font-size: 40px; background-color: #ff477e; color: #d0f4de; border-radius: 20%, padding: 15px"> Graph or Chart</p>''', unsafe_allow_html=True)
 
-        _, corr, _ = st.columns([4, 8, 4])
+        _, corr, _ = st.columns([2, 8, 2])
         corr.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/correlation.png?raw=true")
         infer = st.button("Click for Inference")
         if infer:
