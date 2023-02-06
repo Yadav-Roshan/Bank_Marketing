@@ -70,7 +70,7 @@ with st.container():
     # logo.image('https://raw.githubusercontent.com/Yadav-Roshan/Bank_Marketing/main/Deployment_test/images/bank_logo.png', width=140)
     # original_title = '<p style="font-family:Arial Black; color:#e76f51; font-size: 60px; text-align:left, text-decoration: solid">Piggy & Penny Banking Services</p>'
     # titl.markdown(original_title, unsafe_allow_html=True)
-    st.markdown('''<center><img  align="middle" src = "https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/header_new.png?raw=true" width = 100% height = 400></center>''', unsafe_allow_html=True)
+    st.markdown('''<center><img  align="middle" src = "https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/header_new.png?raw=true" width = 100% height = auto></center>''', unsafe_allow_html=True)
 
 selected = option_menu(None, ["Home", "Prediction",  "Analysis", "Contribute", 'About Us'], 
     icons=['house', 'gear-wide-connected',"bar-chart-line" ,"cloud-arrow-up", 'person-rolodex'], 
@@ -85,7 +85,7 @@ selected = option_menu(None, ["Home", "Prediction",  "Analysis", "Contribute", '
 
 if(selected == "Home"):
     with st.container():
-        st.markdown('''<center><img src = "https://raw.githubusercontent.com/Yadav-Roshan/Bank_Marketing/main/Deployment_test/images/homepage.webp" width=1275 style = "border:2px #00bbf9; -webkit-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);-moz-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);box-shadow:20px 28px 16px -26px rgba(0, 0, 0)"></center>''', unsafe_allow_html = True)
+        st.markdown('''<center><img src = "https://raw.githubusercontent.com/Yadav-Roshan/Bank_Marketing/main/Deployment_test/images/homepage.webp" width=100% style = "border:2px #00bbf9; -webkit-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);-moz-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);box-shadow:20px 28px 16px -26px rgba(0, 0, 0)"></center>''', unsafe_allow_html = True)
 #         f_img = st.image(r"https://raw.githubusercontent.com/Yadav-Roshan/Bank_Marketing/main/Deployment_test/images/homepage.webp", width = 1200)
     
     with st.container():
