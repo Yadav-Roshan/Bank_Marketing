@@ -76,7 +76,7 @@ selected = option_menu(None, ["Home", "Prediction",  "Analysis", "Contribute", '
     icons=['house', 'gear-wide-connected',"bar-chart-line" ,"cloud-arrow-up", 'person-rolodex'], 
     menu_icon="cast", default_index=0, orientation="horizontal",
     styles={
-        "container": {"padding": "0!important", "background-color": "#9d0208", "width" : "5000px"},
+        "container": {"padding": "0!important", "background-color": "#9d0208", "max-width: 5000px"},
         "icon": {"color": "orange", "font-size": "18px"}, 
         "nav-link": {"color":"white", "font-size": "18px", "text-align": "left", "margin":"0px", "--hover-color": "#780000", "border" : "2px #fb6f92"},
         "nav-link-selected": {"background-color": "#370617"},
