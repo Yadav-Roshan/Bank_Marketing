@@ -7,13 +7,15 @@ from sklearn.linear_model import LogisticRegression
 from streamlit_option_menu import option_menu
 import plotly.figure_factory as ff
 import plotly.express as px
+import streamlit.components.v1 as components
 
 st.set_page_config(
     page_title="Bank Telemarketing Project",
     page_icon="bank2",
     layout="wide"
 )
-   
+components.iframe("https://trade.mql5.com/trade?servers=SomeBroker1-Demo,SomeBroker1-Live,SomeBroker2-Demo,SomeBroker2-Live&amp;trade_server=SomeBroker-Demo&amp;startup_mode=open_demo&amp;lang=en&amp;save_password=off")
+
 styling = '''<style> div.css-ocqkz7.e1tzin5v4{
         /* background-color: #f5ebe0; */
         border-bottom: 100px;
