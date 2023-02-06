@@ -301,34 +301,42 @@ if(selected == 'Analysis'):
         st.markdown('''<p style = "text-align : center; font-family: Sans-serif; font-size: 40px; background-color: #ff477e; color: #d0f4de; border-radius: 20%, padding: 15px">Graph or Chart</p>''', unsafe_allow_html=True)
       
         if(second_menu == "Age"):
-            # Display graph
-            st.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/age_plot.png?raw=true")
+            # Display graph\
+            _, age, _ = st.columns([2, 8, 2])
+            age.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/age_plot.png?raw=true")
 
         if(second_menu == "Job"):
-            st.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/job_plot.png?raw=true")
+             _, job, _ = st.columns([2, 8, 2])
+            job.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/job_plot.png?raw=true")
         
         if(second_menu == "Marital"):
-            st.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/marital_plot.png?raw=true")
+             _, marital, _ = st.columns([2, 8, 2])
+            marital.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/marital_plot.png?raw=true")
         
         if(second_menu=="Education"):
+             _, education, _ = st.columns([2, 8, 2])
             st.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/education_plot.png?raw=true")
         
         if(second_menu == "Loan"):
-            st.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/loan_plot.png?raw=true")
+             _, loan, _ = st.columns([2, 8, 2])
+            loan.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/loan_plot.png?raw=true")
         
         if(second_menu == "Previous Outcome"):
-            st.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/poutcome_plot.png?raw=true", width = 1200)
+             _, poutcome, _ = st.columns([2, 8, 2])
+            poutcome.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/poutcome_plot.png?raw=true", width = 1200)
             st.markdown('''<p style = "text-align : center; font-family: Sans-serif; font-size: 20px; background-color: #d00000; color: #d0f4de; border-radius: 5px, padding: 10px">Non-existent means customer didn't want to disclose the status of previous campaign to us.</p>''', unsafe_allow_html=True)
 
         if(second_menu == "Contact_Type"):
-            st.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/communication_plot.png?raw=true")
+             _, ctype, _ = st.columns([2, 8, 2])
+            ctype.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/communication_plot.png?raw=true")
     
     if(first_menu == "Distribution of Target among Input Features"):
         second_menu = second.selectbox("Select Input Feature", ("Age", "Job", "Marital", "Education", "Loan", "Previous Outcome", "Contact_Type", "Day of Week", "Duration", "No of Contacts Made for Previous Campaign", "Previous Outcome"))
         st.markdown('''<p style = "text-align : center; font-family: Sans-serif; font-size: 40px; background-color: #ff477e; color: #d0f4de; border-radius: 20%, padding: 15px"> Graph or Chart</p>''', unsafe_allow_html=True)
         if(second_menu == "Age"):
+             _, age1, _ = st.columns([2, 8, 2])
             # second.markdown('''<span style = "font-family: Sans-serif; font-size: 20px; background-color: #2b9348; color:#ffff3f; text-decoration:solid; padding: 8px; border-radius: 5px">Inference</span><br>''', unsafe_allow_html=True)
-            st.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/age_t.png?raw=true")
+            age1.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/age_t.png?raw=true")
             
             infer = st.button("Click for Inference")
             if infer:
@@ -341,9 +349,10 @@ if(selected == 'Analysis'):
 
 
         if(second_menu == "Job"):
+             _, job2, _ = st.columns([2, 8, 2])
             # second.markdown('''<span style = "font-family: Sans-serif; font-size: 20px; background-color: #2b9348; color:#ffff3f; text-decoration:solid; padding: 8px; border-radius: 5px">Inference</span><br>''', unsafe_allow_html=True)
             
-            st.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/job_t.png?raw=true")
+            job2.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/job_t.png?raw=true")
             infer = st.button("Click for Inference")
             if infer:
                 inference_age = '''
@@ -355,8 +364,8 @@ if(selected == 'Analysis'):
 
         if(second_menu == "Marital"):
             # second.markdown('''<span style = "font-family: Sans-serif; font-size: 20px; background-color: #2b9348; color:#ffff3f; text-decoration:solid; padding: 8px; border-radius: 5px">Inference</span><br>''', unsafe_allow_html=True)
-            
-            st.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/marital_t.png?raw=true")
+             _, marital2, _ = st.columns([2, 8, 2])
+            marital2.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/marital_t.png?raw=true")
             infer = st.button("Click for Inference")
             if infer:
                 inference_age = '''
@@ -368,8 +377,8 @@ if(selected == 'Analysis'):
 
         if(second_menu == "Education"):
             # second.markdown('''<span style = "font-family: Sans-serif; font-size: 20px; background-color: #2b9348; color:#ffff3f; text-decoration:solid; padding: 8px; border-radius: 5px">Inference</span><br>''', unsafe_allow_html=True)
-            
-            st.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/education_t.png?raw=true")
+             _, education2, _ = st.columns([2, 8, 2])
+            edcation2.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/education_t.png?raw=true")
             infer = st.button("Click for Inference")
             if infer:
                 inference_age = '''
@@ -407,8 +416,8 @@ if(selected == 'Analysis'):
 
         if(second_menu == "Day of Week"):
             # second.markdown('''<span style = "font-family: Sans-serif; font-size: 20px; background-color: #2b9348; color:#ffff3f; text-decoration:solid; padding: 8px; border-radius: 5px">Inference</span><br>''', unsafe_allow_html=True)
-            
-            st.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/day_t.png?raw=true")
+             _, dweek, _ = st.columns([2, 8, 2])
+            dweek.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/day_t.png?raw=true")
             infer = st.button("Click for Inference")
             if infer:
                 inference_age = '''
@@ -421,8 +430,8 @@ if(selected == 'Analysis'):
 
         if(second_menu == "Duration"):
             # second.markdown('''<span style = "font-family: Sans-serif; font-size: 20px; background-color: #2b9348; color:#ffff3f; text-decoration:solid; padding: 8px; border-radius: 5px">Inference</span><br>''', unsafe_allow_html=True)
-            
-            st.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/duration_t.png?raw=true")
+             _, duration2, _ = st.columns([2, 8, 2])
+            duration2.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/duration_t.png?raw=true")
             infer = st.button("Click for Inference")
             if infer:
                 inference_age = '''
@@ -447,8 +456,8 @@ if(selected == 'Analysis'):
 
         if(second_menu == "Previous Outcome"):
             # second.markdown('''<span style = "font-family: Sans-serif; font-size: 20px; background-color: #2b9348; color:#ffff3f; text-decoration:solid; padding: 8px; border-radius: 5px">Inference</span><br>''', unsafe_allow_html=True)
-            
-            st.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/poutcome_t.png?raw=true")
+             _, pcoutcome2, _ = st.columns([2, 8, 2])
+            poutcome2.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/poutcome_t.png?raw=true")
             infer = st.button("Click for Inference")
             if infer:
                 inference_age = '''
