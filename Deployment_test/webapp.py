@@ -307,7 +307,7 @@ if(selected == 'Analysis'):
 
         if(second_menu == "Job"):
              _, job3, _ = st.columns([2, 8, 2])
-            job3.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/job_plot.png?raw=true")
+#             job3.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/job_plot.png?raw=true")
        
         if(second_menu == "Marital"):
              _, marital, _ = st.columns([2, 8, 2])
