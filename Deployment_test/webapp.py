@@ -70,13 +70,13 @@ with st.container():
     # logo.image('https://raw.githubusercontent.com/Yadav-Roshan/Bank_Marketing/main/Deployment_test/images/bank_logo.png', width=140)
     # original_title = '<p style="font-family:Arial Black; color:#e76f51; font-size: 60px; text-align:left, text-decoration: solid">Piggy & Penny Banking Services</p>'
     # titl.markdown(original_title, unsafe_allow_html=True)
-    st.markdown('''<center><img  align="middle" src = "https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/header_new.png?raw=true" width = 100% height = 300></center>''', unsafe_allow_html=True)
+    st.markdown('''<center><img  align="middle" src = "https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/header_new.png?raw=true" width = 100% height = auto></center>''', unsafe_allow_html=True)
 
 selected = option_menu(None, ["Home", "Prediction",  "Analysis", "Contribute", 'About Us'], 
     icons=['house', 'gear-wide-connected',"bar-chart-line" ,"cloud-arrow-up", 'person-rolodex'], 
     menu_icon="cast", default_index=0, orientation="horizontal",
     styles={
-        "container": {"padding": "0!important", "background-color": "#9d0208", "max-width": "4990px"},
+        "container": {"padding": "0!important", "background-color": "#9d0208", "max-width": "100%"},
         "icon": {"color": "orange", "font-size": "18px"}, 
         "nav-link": {"color":"white", "font-size": "18px", "text-align": "left", "margin":"0px", "--hover-color": "#780000", "border" : "2px #fb6f92"},
         "nav-link-selected": {"background-color": "#370617"},
