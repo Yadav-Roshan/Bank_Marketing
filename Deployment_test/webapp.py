@@ -259,8 +259,8 @@ if(selected == "Prediction"):
             ax1.pie(probas.T, explode=(0.1, 0.2), labels=['Failure', 'Success'], autopct='%1.1f%%',
                     shadow=True, startangle=90, colors = ["#c05454", "#7cc95b"])
             ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
-
-            st.pyplot(fig1)
+            _, output, _ = st.columns([2, 8, 2])
+            output.pyplot(fig1)
 
         st.markdown("###### To predict whether this customer will be subscribing our scheme or not, click on predict.")
         _, but, _ = st.columns([3, 1 ,5])
