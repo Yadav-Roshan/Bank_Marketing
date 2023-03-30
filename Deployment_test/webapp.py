@@ -70,10 +70,10 @@ with st.container():
     # logo.image('https://raw.githubusercontent.com/Yadav-Roshan/Bank_Marketing/main/Deployment_test/images/bank_logo.png', width=140)
     # original_title = '<p style="font-family:Arial Black; color:#e76f51; font-size: 60px; text-align:left, text-decoration: solid">Piggy & Penny Banking Services</p>'
     # titl.markdown(original_title, unsafe_allow_html=True)
-    st.markdown('''<center><img  align="middle" src = "https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/Header2.jpg?raw=true" width = 100% height = auto></center>''', unsafe_allow_html=True)
+    st.markdown('''<center><img  align="middle" src = "https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/header3.jpg?raw=true" width = 100% height = auto></center>''', unsafe_allow_html=True)
 
-selected = option_menu(None, ["Dataset", "Prediction",  "Analysis", "Contribute", 'About Us'], 
-    icons=['house', 'gear-wide-connected',"bar-chart-line" ,"cloud-arrow-up", 'person-rolodex'], 
+selected = option_menu(None, ["Dashboard", "Dataset", "Prediction",  "Analysis", "Contribute", 'About Us'], 
+    icons=["", 'house', 'gear-wide-connected',"bar-chart-line" ,"cloud-arrow-up", 'person-rolodex'], 
     menu_icon="cast", default_index=0, orientation="horizontal",
     styles={
         "container": {"padding": "0!important", "background-color": "#9d0208", "max-width": "100%"},
