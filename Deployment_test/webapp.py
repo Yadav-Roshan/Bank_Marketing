@@ -381,7 +381,7 @@ if(selected == 'Analysis'):
         if(second_menu == "Education"):
             # second.markdown('''<span style = "font-family: Sans-serif; font-size: 20px; background-color: #2b9348; color:#ffff3f; text-decoration:solid; padding: 8px; border-radius: 5px">Inference</span><br>''', unsafe_allow_html=True)
             _, education2, _ = st.columns([2, 8, 2])
-            edcation2.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/education_t.png?raw=true")
+            education2.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/education_t.png?raw=true")
             infer = st.button("Click for Inference")
             if infer:
                 inference_age = '''
