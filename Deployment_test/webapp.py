@@ -175,9 +175,10 @@ if(selected == "Home"):
 
 if(selected == "Prediction"):
     with st.container():
+        
         page_bg_img = '''
             <style>
-            body {
+            div.css-cqussq.e1tzin5v0{
             background-image: url("https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/prediction_bg.jpg?raw=true");
             background-size: cover;
             }
