@@ -175,6 +175,16 @@ if(selected == "Home"):
 
 if(selected == "Prediction"):
     with st.container():
+        page_bg_img = '''
+            <style>
+            body {
+            background-image: url("https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/prediction_bg.jpg?raw=true");
+            background-size: cover;
+            }
+            </style>
+            '''
+
+        st.markdown(page_bg_img, unsafe_allow_html=True)
         st.markdown("## **Prediction of Telemarketing Campaign**")
         st.markdown("#### **Enter these details**")
 
