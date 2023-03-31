@@ -499,8 +499,9 @@ if(selected == "Contribute"):
     d_df = pd.concat([c_df, a_df])
     c_df = d_df.reset_index(drop = True)
     
-    _, contr, _ = st.columns([2, 8, 2])
-    contr.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/contribute.jpg?raw=true", width = 1200)
+    
+#     _, contr, _ = st.columns([2, 8, 2])
+#     contr.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/contribute.jpg?raw=true", width = 1200)
 
 if(selected == "About Us"):
     first, second, third = st.columns([1.5, 2, 1.5])
