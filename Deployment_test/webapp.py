@@ -89,10 +89,10 @@ selected = option_menu(None, ["Dashboard", "Dataset", "Prediction",  "Analysis",
 )
 
 if(selected=="Dashboard"):
-     with st.expander("Metrics", expanded = True):
+    with st.expander("Metrics", expanded = True):
         st.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/Metrics.png?raw=true")
     
-     with st.expander("ROC AUC Curve", expanded = True):
+    with st.expander("ROC AUC Curve", expanded = True):
         st.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/roc.png?raw=true")
         
     with st.expander("Cumulative and Lift Curve", expanded = True):
