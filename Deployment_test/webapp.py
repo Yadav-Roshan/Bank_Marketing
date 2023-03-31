@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from streamlit_option_menu import option_menu
 import plotly.figure_factory as ff
@@ -63,7 +64,11 @@ st.markdown(styling, unsafe_allow_html = True)
 # with open(r"https://raw.githubusercontent.com/Yadav-Roshan/Bank_Marketing/main/Deployment_test/style.css") as f:
 #     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html = True)
 
-
+c_df = pd.read_csv(r"https://raw.githubusercontent.com/Yadav-Roshan/Bank_Marketing/main/Deployment_test/datatsets/cleaned_df.csv")
+X_train = pd.read_csv("https://raw.githubusercontent.com/Yadav-Roshan/Bank_Marketing/main/Deployment_test/datatsets/model_x.csv")
+y_train = pd.read_csv("https://raw.githubusercontent.com/Yadav-Roshan/Bank_Marketing/main/Deployment_test/datatsets/model_y.csv")
+X_train = X_train.set_index('ind')
+y_train = y_train.set_index('ind')
 
 with st.container():
     # logo, titl = st.columns([1, 4])
@@ -217,14 +222,6 @@ if(selected == "Prediction"):
         _, cons, _ = st.columns([1, 5, 1])
         cons_price_idx  = cons.slider("Current Consumer Price Index", min_value = 80.00, max_value = 120.00, step = 0.01, value = 116.74)
 
-        X_train = pd.read_csv("https://raw.githubusercontent.com/Yadav-Roshan/Bank_Marketing/main/Deployment_test/datatsets/model_x.csv")
-        y_train = pd.read_csv("https://raw.githubusercontent.com/Yadav-Roshan/Bank_Marketing/main/Deployment_test/datatsets/model_y.csv")
-        X_train = X_train.set_index('ind')
-        y_train = y_train.set_index('ind')
-
-        model=LogisticRegression()
-        model.fit(X_train, y_train)
-
         def predict_class():
 
             education_dict = {'Basic Education(4 Years)':0, 'Basic Education(6 Years)':1, 'Basic Education(9 Years)':2, 'High School':3, 'Professional Course':5, 'University Degree':6, 'Illiterate':4}
@@ -249,8 +246,16 @@ if(selected == "Prediction"):
                 age_bins = 0
             else:
                 age_bins = 2
-
-            
+                
+            categorical_cols_2 = list(c_df.select_dtypes(include = ['object', 'category']))
+            categorical_dummies = pd.get_dummies(c_df[categorical_cols_2])
+            df2 = pd.concat([c_df, categorical_dummies], axis =1)
+            df2 = df2.drop(categorical_cols, axis = 1)
+            X = df2.iloc[:, :-1]
+            y = df2.iloc[:, -1]
+            X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.25, random_state = 42)
+            model=LogisticRegression()
+            model.fit(X_train, y_train)
 
             data = list([age_bins, job, education, contact, day_of_week, duration, campaign, previous, poutcome, emp_var_rate, cons_price_idx])
             
@@ -485,6 +490,14 @@ if(selected == 'Analysis'):
                 st.markdown(inference_age, unsafe_allow_html=True)
 
 if(selected == "Contribute"):
+    _, uploader, _ = st.columns([2, 8, 2])
+    uploader = st.file_uploader("Upload CSV")
+    if uploader is not None:
+        a_df = pd.read_csv(uploader)
+    
+    d_df = pd.concat([c_df, a_df])
+    c_df = d_df.reset_index(drop = True)
+    
     _, contr, _ = st.columns([2, 8, 2])
     contr.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/contribute.jpg?raw=true", width = 1200)
 
