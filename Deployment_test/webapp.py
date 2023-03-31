@@ -495,7 +495,7 @@ if(selected == "Contribute"):
     if uploader is not None:
         a_df = pd.read_csv(uploader)
     
-    d_df = pd.concat([c_df, a_df])
+    c_df = pd.concat([c_df, a_df])
     c_df = d_df.reset_index(drop = True)
     
     _, contr, _ = st.columns([2, 8, 2])
