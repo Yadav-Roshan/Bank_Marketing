@@ -492,6 +492,7 @@ if(selected == 'Analysis'):
 if(selected == "Contribute"):
     _, uploader, _ = st.columns([2, 8, 2])
     uploader = st.file_uploader("Upload CSV")
+    a_df = pd.DataFrame()
     if uploader is not None:
         a_df = pd.read_csv(uploader)
     
