@@ -89,9 +89,15 @@ selected = option_menu(None, ["Dashboard", "Dataset", "Prediction",  "Analysis",
 )
 
 if(selected=="Dashboard"):
-    with st.expander("Cumulative and Lift Curve"):
+     with st.expander("Metrics", expanded = True):
+        st.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/Metrics.png?raw=true")
+    
+     with st.expander("ROC AUC Curve", expanded = True):
+        st.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/roc.png?raw=true")
+        
+    with st.expander("Cumulative and Lift Curve", expanded = True):
         st.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/LIft_and_Cumulative_Curve.png?raw=true")
-
+    
 if(selected == "Dataset"):
     with st.container():
         st.markdown('''<center><img src = "https://raw.githubusercontent.com/Yadav-Roshan/Bank_Marketing/main/Deployment_test/images/homepage.webp" width=80% style = "border:2px #00bbf9; -webkit-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);-moz-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);box-shadow:20px 28px 16px -26px rgba(0, 0, 0)"></center>''', unsafe_allow_html = True)
