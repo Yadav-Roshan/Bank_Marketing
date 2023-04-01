@@ -89,6 +89,15 @@ selected = option_menu(None, ["Dashboard", "Dataset", "Prediction",  "Analysis",
 )
 
 if(selected=="Dashboard"):
+    with st.expander("Decision Making Facts", expanded = True):
+        education, marital, senior = st.columns(3)
+        education.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/education_card.png?raw=true")
+        marital.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/marital_card.png?raw=true")
+        senior.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/senior_card.png?raw=true")
+        age, contact, loan = st.columns(3)
+        age.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/age_card.png?raw=true")
+        contact.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/contact_card.png?raw=true")
+        loan.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/loan_card.png?raw=true")
     with st.expander("Metrics", expanded = True):
         st.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/Metrics.png?raw=true")
     
@@ -272,7 +281,7 @@ if(selected == "Prediction"):
 
             probas = model.predict_proba([data])
             probas = probas.T.flatten()*100
-
+            
             fig1, ax1 = plt.subplots()
             ax1.pie(probas.T, explode=(0.1, 0.2), labels=['Failure', 'Success'], autopct='%1.1f%%',
                     shadow=True, startangle=90, colors = ["#c05454", "#7cc95b"])
