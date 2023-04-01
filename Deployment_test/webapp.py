@@ -89,6 +89,8 @@ selected = option_menu(None, ["Dashboard", "Dataset", "Prediction",  "Analysis",
 )
 
 if(selected=="Dashboard"):
+    with st.expander("Block Diagram", expanded = True):
+        st.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/Block_Diagram.png?raw=true")
     with st.expander("Decision Making Facts", expanded = True):
         education, marital, senior = st.columns(3)
         education.image(r"https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/education_card.jpg?raw=true")
