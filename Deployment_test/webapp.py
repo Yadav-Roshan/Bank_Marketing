@@ -257,15 +257,9 @@ if(selected == "Prediction"):
             else:
                 age_bins = 2
             
-            from sklearn.preprocessing import LabelEncoder
-            categorical_cols_2 = list(c_df.select_dtypes(include = ['object', 'category']))
-            df2 = c_df.copy()
-            df2[categorical_cols_2] = LabelEncoder().fit_transform(df2[categorical_cols_2])
-            X = df2.iloc[:, :-1]
-            y = df2.iloc[:, -1].values
-#             st.write(y)
+            
             model=LogisticRegression()
-            model.fit(X, y)
+            model.fit(X_train, y_train)
 
             data = list([age_bins, job, education, contact, day_of_week, duration, campaign, previous, poutcome, emp_var_rate, cons_price_idx])
             
