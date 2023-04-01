@@ -511,7 +511,7 @@ if(selected == "Contribute"):
     
     d_df = pd.concat([c_df, a_df])
     c_df = d_df.reset_index(drop = True)
-    c_df = c_df.drop_duplicates(keep = 'First')
+    c_df = c_df.drop_duplicates(keep = "first")
     
     
 #     _, contr, _ = st.columns([2, 8, 2])
