@@ -507,7 +507,7 @@ if(selected == "Contribute"):
         a_df = pd.read_csv(uploader)
     
     length = a_df.shape[0]
-    c_df = c_df[:-length,  :]
+    c_df = c_df.iloc[:-length,  :]
     
     d_df = pd.concat([c_df, a_df])
     c_df = d_df.reset_index(drop = True)
