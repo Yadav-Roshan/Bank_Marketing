@@ -262,8 +262,8 @@ if(selected == "Prediction"):
             df2 = c_df.copy()
             df2[categorical_cols_2] = LabelEncoder().fit_transform(df2[categorical_cols_2])
             X = df2.iloc[:, :-1]
-            y = df2.target
-            st.write(y)
+            y = df2.iloc[:, -1].values
+#             st.write(y)
             model=LogisticRegression()
             model.fit(X, y)
 
