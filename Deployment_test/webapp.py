@@ -260,7 +260,7 @@ if(selected == "Prediction"):
             categorical_cols_2 = list(c_df.select_dtypes(include = ['object', 'category']))
             categorical_dummies = pd.get_dummies(c_df[categorical_cols_2])
             df2 = pd.concat([c_df, categorical_dummies], axis =1)
-            df2 = df2.drop(categorical_cols, axis = 1)
+            df2 = df2.drop(categorical_cols_2, axis = 1)
             X = df2.iloc[:, :-1]
             y = df2.iloc[:, -1]
             X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.25, random_state = 42)
