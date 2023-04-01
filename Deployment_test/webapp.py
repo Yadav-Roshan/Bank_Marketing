@@ -259,7 +259,7 @@ if(selected == "Prediction"):
                 
             categorical_cols_2 = list(c_df.select_dtypes(include = ['object', 'category']))
             df2 = c_df.copy()
-            df2[categorical_cols_2] = a_df[categorical_cols_2].cat.code
+            df2[categorical_cols_2] = df2[categorical_cols_2].cat.code
             X = df2.iloc[:, :-1]
             y = df2.iloc[:, -1]
             model=LogisticRegression()
