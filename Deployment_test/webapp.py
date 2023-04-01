@@ -506,8 +506,11 @@ if(selected == "Contribute"):
     if uploader is not None:
         a_df = pd.read_csv(uploader)
     
+    c_df = c_df[:shape(a_df)[0], :]
+    
     d_df = pd.concat([c_df, a_df])
     c_df = d_df.reset_index(drop = True)
+    c_df = c_df.drop_duplicates(keep = 'First')
     
     
 #     _, contr, _ = st.columns([2, 8, 2])
