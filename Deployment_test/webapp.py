@@ -258,15 +258,12 @@ if(selected == "Prediction"):
                 age_bins = 2
                 
             categorical_cols_2 = list(c_df.select_dtypes(include = ['object', 'category']))
-            categorical_dummies = pd.get_dummies(c_df[categorical_cols_2])
-            df2 = pd.concat([c_df, categorical_dummies], axis =1)
-            df2 = df2.drop(categorical_cols_2, axis = 1)
+            df2 = c_df.copy()
+            df2[categorical_cols_2] = a_df[categorical_cols_2].cat.code
             X = df2.iloc[:, :-1]
             y = df2.iloc[:, -1]
-            X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.25, random_state = 42)
-            st.write(X_train.shape)
             model=LogisticRegression()
-            model.fit(X_train, y_train)
+            model.fit(X, y)
 
             data = list([age_bins, job, education, contact, day_of_week, duration, campaign, previous, poutcome, emp_var_rate, cons_price_idx])
             
