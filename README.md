@@ -54,7 +54,7 @@ Link for the website:
 ## 🌟Screenshots of the result
 
 
-![App Screenshot](![image](https://user-images.githubusercontent.com/31336534/233766451-a91eff7d-1a52-4d8c-97a5-8ff06049e21a.png))
+![App Screenshot](![image](https://github.com/Yadav-Roshan/Bank_Marketing/blob/main/Deployment_test/images/roc.png?raw=true)
 **fig2: auc score**
 
 
